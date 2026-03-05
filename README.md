@@ -44,7 +44,7 @@ Below is an example of what this builder will create.
 > [https://trash-guides.info/Radarr/Radarr-recommended-naming-scheme/#plex](https://trash-guides.info/Radarr/Radarr-recommended-naming-scheme/#plex)
 
 Movies:<br>
-<img width="922" height="384" alt="image" src="https://github.com/user-attachments/assets/7c57d138-5827-4076-846f-f6c5da6fa61a" />
+<img width="1006" height="343" alt="image" src="https://github.com/user-attachments/assets/6ca48e39-3ae0-413b-9bcc-b62d150dc2b4" />
 <br>
 <br>
 Series:<br>

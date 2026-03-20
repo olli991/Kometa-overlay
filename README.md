@@ -12,15 +12,23 @@
 - added grey color and `-` for 10.0 ratings
 - added text for status of TV Shows (Airing, Ended, Canceled, Returning)
 - added flags from [Craftwork2720](https://github.com/Craftwork2720/pmm-rating-and-subtitle-flag-for-movies) inspired by [gravelfreemans fork](https://github.com/gravelfreeman/kometa-posters?tab=readme-ov-file) but changed it into two language support and display on the left and right of the rating. Resized the flags to fit it.
-- added additional audio codecs from [shivam183s fork](https://github.com/shivam183/Kometa/tree/local-main). Adjusted some of the images and implementeded it into the current regex. Also added some rare format detection like DTS-ES or DTS-HRA
+- added additional audio codecs from [shivam183s fork](https://github.com/shivam183/Kometa/tree/local-main). Adjusted some of the images. Added regex detection for it. Also added some rare format detection like DTS-ES or DTS-HRA
 - extended the whole detection and images for combinations of DV, HDR and HDR+ with old audio codecs
-- added the generation of overlays for season posters and episodes
+- added the info below to also create overlays for season posters and episodes
 
 Changes are editied into sections below.
 
 ## audience_rating.yml
 
-This file will create an overlay showing the current audience rating value in PLEX. Ratings of 9 or higher are dark green, 7.5 or higher are light green, 6.5 or higher are yellow,  5 and or higher are orange and anything lower will be red.
+This file will create an overlay showing the current audience rating value in PLEX. 
+- Ratings of 10.0 will be shown on a grey background and with `-`
+- Ratings of 9.0 or higher are dark green
+- Ratings of 7.5 or higher are light green
+- Ratings of 6.5 or higher are yellow
+- Ratings of 5.0 or higher are orange
+- anything lower will be red
+
+I wanted to implement a grey background for "No rating" but `0` is not present on not rated episodes so there will be a blank space on non rated items so far... if there is a soluten let me know :-) 
 
 ## media_info.yml
 
@@ -36,7 +44,7 @@ Below is an example of what this builder will create.
 > [https://trash-guides.info/Radarr/Radarr-recommended-naming-scheme/#plex](https://trash-guides.info/Radarr/Radarr-recommended-naming-scheme/#plex)
 
 Movies:<br>
-<img width="922" height="384" alt="image" src="https://github.com/user-attachments/assets/7c57d138-5827-4076-846f-f6c5da6fa61a" />
+<img width="1006" height="343" alt="image" src="https://github.com/user-attachments/assets/6ca48e39-3ae0-413b-9bcc-b62d150dc2b4" />
 <br>
 <br>
 Series:<br>

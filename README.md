@@ -27,8 +27,7 @@ This file will create an overlay showing the current audience rating value in PL
 - Ratings of 6.5 or higher are yellow
 - Ratings of 5.0 or higher are orange
 - anything lower will be red
-
-I wanted to implement a grey background for "No rating" but `0` is not present on not rated episodes so there will be a blank space on non rated items so far... if there is a soluten let me know :-) 
+- No Rating will be grey with `-` as well
 
 ## media_info.yml
 

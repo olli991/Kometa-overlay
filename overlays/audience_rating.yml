@@ -23,7 +23,7 @@ templates:
             value: config/overlays/images/audience_score/audience_score_mid_low.png  
           - key: audience_score_low_backdrop
             value: config/overlays/images/audience_score/audience_score_low.png
-          - key: audience_score_low_none_backdrop
+          - key: audience_score_none_backdrop
             value: config/overlays/images/audience_score/audience_score_none.png  
       audience_rating.gte:
         conditions:
@@ -39,14 +39,16 @@ templates:
             value: 5.0
           - key: [audience_score_low, audience_score_low_backdrop]
             value: 0.1
-          - key: [audience_score_low_none, audience_score_low_none_backdrop]
-            value: 0  
+      audience_rating.rated:
+        conditions:
+          - key: [audience_score_none, audience_score_none_backdrop]
+            value: false       
       names:
         default: <<overlay_name>>
         conditions:
           - key: [audience_score_highest, audience_score_high, audience_score_mid, audience_score_mid_low, audience_score_low]
             value: text(<<audience_rating>>)
-          - key: [audience_score_highest_none, audience_score_low_none]
+          - key: [audience_score_highest_none, audience_score_none]
             value: text(-)  
     optional:
       - file
@@ -91,7 +93,7 @@ overlays:
     variables: { key: audience_score_low_backdrop, weight: 300, group: backdrop }
     template: [ name: audience_score ]
   audience_score_none_backdrop:
-    variables: { key: audience_score_low_none_backdrop, weight: 200, group: backdrop }
+    variables: { key: audience_score_none_backdrop, weight: 200, group: backdrop }
     template: [ name: audience_score ]
 
   audience_score_highest_none:
@@ -112,6 +114,6 @@ overlays:
   audience_score_low:
     variables: { key: audience_score_low, weight: 300, group: score }
     template: [ name: audience_score ]
-  audience_score_low_none:
-    variables: { key: audience_score_low_none, weight: 200, group: score }
+  audience_score_none:
+    variables: { key: audience_score_none, weight: 200, group: score }
     template: [ name: audience_score ]  

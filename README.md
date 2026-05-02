@@ -151,7 +151,7 @@ overlay_files:
       back_width: 40
       back_height: 80
       back_color: "#FFFFFF00"
-      horizontal_offset: 179
+      horizontal_offset: 189
       horizontal_align: right
       vertical_offset: 50
       vertical_align: bottom
@@ -165,7 +165,7 @@ overlay_files:
       back_width: 40
       back_height: 80
       back_color: "#FFFFFF00"
-      horizontal_offset: 22
+      horizontal_offset: 32
       horizontal_align: right
       vertical_offset: 50
       vertical_align: bottom 
@@ -205,7 +205,7 @@ overlay_files:
       back_width: 40
       back_height: 80
       back_color: "#FFFFFF00"
-      horizontal_offset: 179
+      horizontal_offset: 189
       horizontal_align: right
       vertical_offset: 50
       vertical_align: bottom
@@ -220,7 +220,7 @@ overlay_files:
       back_width: 40
       back_height: 80
       back_color: "#FFFFFF00"
-      horizontal_offset: 22
+      horizontal_offset: 32
       horizontal_align: right
       vertical_offset: 50
       vertical_align: bottom   

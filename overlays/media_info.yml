@@ -108,26 +108,26 @@ external_templates:
           - type: [combined, video, audio]
             value: bottom
       horizontal_offset:
-        default: 50
+        default: 25
         conditions:
           - type: edition
             res: 4K
-            value: 186
+            value: 171
           - type: edition
             res: 1080p
-            value: 202
+            value: 187
           - type: edition
             res: 720p
-            value: 251
+            value: 236
           - type: edition
             res: 576p
-            value: 184
+            value: 169
           - type: edition
             res: 480p
-            value: 184    
+            value: 169    
           - type: edition
             res: SD
-            value: 184
+            value: 169
       group:
         conditions:
           - type: [resolution, edition]
